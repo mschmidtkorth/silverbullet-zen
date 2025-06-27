@@ -9,3 +9,8 @@ Copy the file into your [Silverbullet.md](https://silverbullet.md/) space folder
 # Theme
 
 ![Screenshot of Zen theme for Silverbullet.md](Theme.png)
+
+# Thanks
+
+- To @zefhemel for [Silverbullet.md](https://silverbullet.md/)
+- To Mozilla for [Zen Browser](https://zen-browser.app/) which this theme is a homage to
