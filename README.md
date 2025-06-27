@@ -15,4 +15,4 @@ Make sure you have no conflicting styles.
 # Thanks
 
 - To @zefhemel for [Silverbullet.md](https://silverbullet.md/)
-- To Mozilla for [Zen Browser](https://zen-browser.app/) which this theme is a homage to
+- To Mozilla for [Zen Browser](https://zen-browser.app/), which this theme pays homage to
