@@ -1,6 +1,6 @@
 # Installation
 
-Copy the `ZEN_:_THEME.md` file into your [Silverbullet.md](https://silverbullet.md/) space folder and reload (`Ctrl+Alt+R` or via Command Picker `System: Reload`).
+Copy the `ZEN_THEME.md` file into your [Silverbullet.md](https://silverbullet.md/) space folder and reload (`Ctrl+Alt+R` or via Command Picker `System: Reload`).
 
 Make sure you have no conflicting styles.
 
