@@ -1,6 +1,6 @@
 # Installation
 
-Copy the file into your Silverbullet.md space folder and reload (`Ctrl+Alt+R` or via Command Picker `System: Reload`).
+Copy the file into your [Silverbullet.md](https://silverbullet.md/) space folder and reload (`Ctrl+Alt+R` or via Command Picker `System: Reload`).
 
 # Theme
 
