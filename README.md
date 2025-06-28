@@ -16,3 +16,4 @@ Make sure you have no conflicting styles.
 
 - To @zefhemel for [Silverbullet.md](https://silverbullet.md/)
 - To Mozilla for [Zen Browser](https://zen-browser.app/), which this theme pays homage to
+- To Matthias Benaets for [Saving CSS](https://github.com/MatthiasBenaets/silverbullet-library/blob/master/Styles/saving.md)
