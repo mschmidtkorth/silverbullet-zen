@@ -30,10 +30,6 @@ property: value
 
 
 
-
-
-
-
 # Theme Foundation
 ## CSS Variables & Design System
 ```space-style
@@ -46,20 +42,6 @@ property: value
 :root, html, body {
   /* Main font */
   --editor-font: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-
-  /* Theme colors */
-  --accent-primary: 247, 111, 83;
-  --accent-secondary: #8B5CF6;
-  --surface-base: #1F1F1F;
-  --surface-lower: 28, 28, 28;
-  --surface-raised: #363636;
-  --surface-hover: #26262C;
-  --border-default: #32343B;
-  --text-primary: #E8E8E8;
-  --text-secondary: #8F8F9D;
-  --text-tertiary: #6E6E7A;
-  --selection-bg: var(--surface-base);
-  --selection-text: #D1CFC0;
 
   /* UI accent colors */
   --ui-accent-color: rgba(var(--accent-primary));
@@ -178,7 +160,6 @@ property: value
   --editor-command-button-meta-color: var(--text-tertiary);
   --editor-blockquote-background-color: rgba(143, 143, 157, 0.05);
   --editor-blockquote-border-color: var(--border-default);
-  --editor-code-background-color: #262624;
   --editor-code-border-color: var(--border-default);
   --editor-inline-code-background-color: var(--surface-raised);
   --editor-inline-code-color: rgb(var(--accent-primary));
@@ -190,7 +171,6 @@ property: value
   --editor-embed-border-color: var(--border-default);
   --editor-table-head-background-color: var(--surface-raised);
   --editor-table-head-color: var(--text-primary);
-  --editor-table-even-background-color: var(--surface-lower);
   --editor-table-odd-background-color: transparent;
   --editor-table-border-color: var(--border-default);
   --editor-image-border-color: var(--border-default);
@@ -239,7 +219,6 @@ property: value
 
   /* Common colors */
   --color-white: #FFFFFF;
-  --color-black: #000000;
 
   /* Semantic colors */
   --color-success: #22C55E;
@@ -290,9 +269,7 @@ property: value
   /* Common UI elements */
   --button-border-subtle: #eeeeee40;
   --input-background: #444444;
-  --code-border-subtle: #555555;
   --selection-highlight: #F76F5350;
-  --hover-highlight: rgba(255, 255, 255, 0.1);
 
   /* Border radius values */
   --radius-xs: 3px;
@@ -316,13 +293,45 @@ property: value
   --transition-slow: 0.3s;
 }
 
-:root {
+html[data-theme="dark"] {
+  /* Theme colors */
+  --accent-primary: 247, 111, 83;
+  --accent-secondary: #8B5CF6;
   --surface-base: #1F1F1F;
+  --surface-lower: 28, 28, 28;
+  --surface-raised: #363636;
+  --surface-hover: #26262C;
+  --border-default: #32343B;
+  --text-primary: #E8E8E8;
+  --text-secondary: #8F8F9D;
+  --text-tertiary: #6E6E7A;
+  --selection-bg: var(--surface-base);
+  --selection-text: #D1CFC0;
+  --editor-code-background-color: #262624;
+  --code-border-subtle: #555555;
+  --editor-table-hover-background-color: rgba(255, 255, 255, 0.1);
+  --color-contrast: #000000;
 }
 
-/* TODO To be implemented */
 html[data-theme="light"] {
-  --surface-base: #FFF;
+  /* Theme colors */
+  --accent-primary: 247, 111, 83;
+  --accent-secondary: #8B5CF6;
+  --surface-base: #FAF7F2;
+  --surface-lower: #f0ebdd;
+  --surface-raised:rgb(232, 227, 212);
+  --surface-hover: rgb(232, 227, 212);
+  --border-default: #32343B;
+  --text-primary: #666359;
+  --text-secondary: #4f4c42;
+  --text-tertiary:#555555;
+  --selection-bg: var(--surface-base);
+  --selection-text: #8c8778;
+  --editor-code-background-color: rgb(240, 235, 221);
+  --code-border-subtle:rgb(165, 162, 152);
+  /* --editor-table-even-background-color: 240, 235, 221; Keep default */
+  --editor-table-hover-background-color: #66635920;
+  --color-contrast: rgb(232, 227, 212);
 }
 ```
 ## Global Styles
@@ -422,7 +431,15 @@ html {
 }
 
 #sb-root {
-  background: var(--surface-base);
+  background: var(--surface-base) !important;
+}
+
+/* Main background */
+--root-background-color: var(--surface-base) !important;
+
+html[data-theme="dark"] #sb-root,
+html:not([data-theme="light"]) #sb-root {
+  background-color: var(--surface-base) !important;
 }
 
 /* Gap between top bar and content */
@@ -1142,7 +1159,7 @@ end)}
 ---
 
 ```space-style
-html[data-theme=dark] {
+html {
   #sb-editor span.sb-highlight:not(.sb-meta), .highlight {
     background-color: var(--accent-primary-80) !important;
     color: var(--color-white) !important;
@@ -1220,13 +1237,13 @@ html[data-theme=dark] {
       &:hover,
       &:nth-of-type(even):hover,
       &:nth-of-type(odd):hover {
-        background-color: rgba(255, 255, 255, 0.1);
+        background: var(--editor-table-hover-background-color) !important;
         filter: brightness(1.2);
       }
 
       /* Alternating row colors */
       &:nth-of-type(even) {
-        background: rgba(var(--editor-table-even-background-color));
+        background: rgba(var(--editor-table-even-background-color)) !important;
       }
 
       /* Rounded corners for last row */
@@ -1364,7 +1381,7 @@ kbd {
   box-shadow: var(--shadow-kbd) !important;
   border: 1px solid transparent;
   border-radius: var(--radius-md);
-  background: var(--color-black);
+  background: var(--color-contrast);
   color: var(--selection-text);
   outline: none;
 
