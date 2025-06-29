@@ -5,12 +5,12 @@ Copy the `ZEN_THEME.md` file into your [Silverbullet.md](https://silverbullet.md
 Make sure you have no conflicting styles.
 
 > [!NOTE]
-> Light theme will come later.
 > Let me know about commonly used plugins and I will include them.
 
 # Theme
 
-![Screenshot of Zen theme for Silverbullet.md](Theme.png)
+![Screenshot of dark Zen theme for Silverbullet.md](Theme.png)
+![Screenshot of light Zen theme for Silverbullet.md](ThemeLight.png)
 
 # Thanks
 
