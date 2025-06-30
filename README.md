@@ -13,7 +13,7 @@ Make sure you have no conflicting styles.
 ![Screenshot of light Zen theme for Silverbullet.md](Theme_Light.png)
 
 ## Dark
-![Screenshot of dark Zen theme for Silverbullet.md](Theme.png)
+![Screenshot of dark Zen theme for Silverbullet.md](Theme_Dark.png)
 
 # Thanks
 
