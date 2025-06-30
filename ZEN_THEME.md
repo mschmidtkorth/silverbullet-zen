@@ -35,9 +35,8 @@ property: value
 ```space-style
 /* priority: 1000 */
 
-/*  @import statements require priority: 1000 (see https://community.silverbullet.md/t/how-to-use-css-import-s-properly-on-using-the-new-space-style-priorities/2484) */
-/*@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Inter:wght@300;400;600&family=IBM+Plex+Mono:wght@100;200;300;400;500;600&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;600&display=swap');
+/* @import statements require priority: 1000 (see https://community.silverbullet.md/t/how-to-use-css-import-s-properly-on-using-the-new-space-style-priorities/2484) */
 
 :root, html, body {
   /* Main font */
@@ -336,6 +335,8 @@ html[data-theme="light"] {
 ```
 ## Global Styles
 ```space-style
+/* priority: 1000 */
+
 /* General typography and smoothing */
 body {
   -webkit-font-smoothing: antialiased;
@@ -398,6 +399,8 @@ input,
 ```
 ## Scrollbars
 ```space-style
+/* priority: 1000 */
+
 *, html, body {
   scrollbar-width: thin !important;
   scrollbar-color: var(--selection-text) transparent !important;
@@ -426,6 +429,8 @@ input,
 # Layout & Navigation
 ## Page Layout
 ```space-style
+/* priority: 1000 */
+
 html {
   --editor-width: 1024px !important; /* Wider page */
 }
@@ -454,6 +459,8 @@ html:not([data-theme="light"]) #sb-root {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 #sb-top {
   border: none;
   opacity: 0.5;
@@ -519,6 +526,8 @@ svg {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 /* Flash page title when saving.
 From: https://github.com/MatthiasBenaets/silverbullet-library/blob/master/Styles/saving.md */
 @keyframes saving {
@@ -556,6 +565,8 @@ From: https://github.com/MatthiasBenaets/silverbullet-library/blob/master/Styles
 ---
 
 ```space-style
+/* priority: 1000 */
+
 .sb-h1, .sb-h2, .sb-h3, .sb-h4, .sb-h5, .sb-h6,
 .sb-line-h1, .sb-line-h2, .sb-line-h3, .sb-line-h4, .sb-line-h5, .sb-line-h6,
 h1, h2, h3, h4, h5, h6 {
@@ -656,6 +667,8 @@ h1, h2, h3, h4, h5, h6 {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 .sb-list.sb-task {
   margin-left: 1em; /* Gap to icon, consistent for multiline */
 }
@@ -669,6 +682,8 @@ h1, h2, h3, h4, h5, h6 {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 /* Links */
 a {
   text-decoration: none;
@@ -687,6 +702,8 @@ a {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 #sb-main .cm-editor .sb-blockquote-outside {
   /* Styling */
   border-left: 2px solid var(--accent-primary-100);
@@ -706,6 +723,8 @@ a {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 hr, .sb-line-hr {
   /* Styling */
   border-width: 2px;
@@ -725,6 +744,8 @@ hr, .sb-line-hr {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 /* Calm style */
 span.sb-code {
   /* Styling */
@@ -752,6 +773,8 @@ function example() {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 /* Font for code blocks */
 .sb-line-fenced-code {
   font-family: IBM Plex Mono !important;
@@ -812,6 +835,8 @@ div.sb-line-fenced-code {
 
 ## HighlightJS Syntax
 ```space-style
+/* priority: 1000 */
+
 .sb-line-fenced-code {
   &.cm-line {
     color: var(--selection-text) !important;
@@ -954,6 +979,8 @@ div.sb-line-fenced-code {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 .sb-checkbox input[type="checkbox"],
 .cm-search input[type="checkbox"] {
   /* Reset default styling */
@@ -1062,6 +1089,8 @@ end)}
 ---
 
 ```space-style
+/* priority: 1000 */
+
 .sb-lua-wrapper .sb-lua-directive-inline {
   &:has(button) {
     border: none !important; /* Remove outline */
@@ -1089,6 +1118,8 @@ end)}
 ---
 
 ```space-style
+/* priority: 1000 */
+
 /* Priority tags */
 .sb-hashtag[data-tag-name="A"],
 .sb-hashtag[data-tag-name="B"],
@@ -1159,6 +1190,8 @@ end)}
 ---
 
 ```space-style
+/* priority: 1000 */
+
 html {
   #sb-editor span.sb-highlight:not(.sb-meta), .highlight {
     background-color: var(--accent-primary-80) !important;
@@ -1189,6 +1222,8 @@ html {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 #sb-main .cm-editor table {
   border-collapse: collapse;
   margin-top: 20px;
@@ -1259,6 +1294,11 @@ html {
     }
   }
 }
+
+/* Exclude Lua tables */
+#sb-main .cm-editor .sb-lua-directive-block table {
+  border-collapse: separate;
+}
 ```
 # Media & Special Content
 ## Images
@@ -1268,6 +1308,8 @@ html {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 #sb-main .cm-editor {
   img {
     border-radius: var(--radius-3xl);
@@ -1282,6 +1324,8 @@ html {
 **Example:** ![[Examples/Example_Frontmatter.png]]
 
 ```space-style
+/* priority: 1000 */
+
 .sb-frontmatter {
   /* Styling */
   border: 1px solid transparent;
@@ -1361,6 +1405,8 @@ html {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 ```
 ## Keyboard Indicators
 **Example:** Press ${widget.new { html = kbd("Ctrl+C") }} to copy
@@ -1376,6 +1422,8 @@ Usage: `${widget.new { html = kbd("Ctrl+C") }}`
 ---
 
 ```space-style
+/* priority: 1000 */
+
 kbd {
   /* Styling */
   box-shadow: var(--shadow-kbd) !important;
@@ -1410,6 +1458,8 @@ kbd {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 /* Page search panel */
 .cm-panels, .cm-search {
   margin-left: 0.25em;
@@ -1556,6 +1606,8 @@ kbd {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 /* Link tooltip */
 #sb-editor .cm-editor .cm-tooltip {
   z-index: 99999 !important;
@@ -1622,6 +1674,8 @@ kbd {
 ---
 
 ```space-style
+/* priority: 1000 */
+
 /* Command palette styling */
 .sb-modal-box {
   backdrop-filter: blur(16px);
@@ -1688,6 +1742,8 @@ end)}
 ---
 
 ```space-style
+/* priority: 1000 */
+
 .sb-notification {
   color: var(--text-selected) !important;
   border-color: var(--selection-text) !important;
@@ -1711,6 +1767,8 @@ end)}
 ${query[[from index.tag "task" where (page == editor.getCurrentPage() and not done) select {Location="[[" .. ref .. "|Open]]", Task=name}]]}
 
 ```space-style
+/* priority: 1000 */
+
 .sb-lua-directive-block {
   border: none !important; /* Only remove for blocks. Inline Lua keeps the border */
   font-size: 0.9em;
@@ -1753,6 +1811,8 @@ ${query[[from index.tag "task" where (page == editor.getCurrentPage() and not do
 ---
 
 ```space-style
+/* priority: 1000 */
+
 /* Linked Mentions */
 .sb-lua-bottom-widget {
   margin-top: 1em !important;
