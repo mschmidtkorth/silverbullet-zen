@@ -15,6 +15,8 @@ Make sure you have no conflicting styles.
 ## Dark
 ![Screenshot of dark Zen theme for Silverbullet.md](Theme_Dark.png)
 
+![Screenshot of dark Zen theme for Silverbullet.md (all features)](Theme_Dark_Full.png)
+
 # Thanks
 
 - To @zefhemel for [Silverbullet.md](https://silverbullet.md/)
