@@ -238,27 +238,6 @@ property: value
   --accent-primary-80: rgba(var(--accent-primary), 0.8);
   --accent-primary-100: rgba(var(--accent-primary), 1.0);
 
-  /* Code syntax highlighting */
-  --syntax-keyword: #f75389;
-  --syntax-string: #34D399;
-  --syntax-string-alt: #6EE7B7;
-  --syntax-number: #FBBF24;
-  --syntax-boolean: #FB7185;
-  --syntax-variable: #60A5FA;
-  --syntax-type: var(--color-warning);
-  --syntax-comment: #6B7280;
-  --syntax-link: #6CB6FF;
-  --syntax-wiki-link: #A78BFA;
-  --syntax-wiki-link-bg: rgba(167, 139, 250, 0.1);
-  --syntax-punctuation: #D1D5DB;
-  --syntax-operator: rgba(var(--accent-primary));
-  --syntax-literal: #10B981;
-  --syntax-invalid: var(--color-error);
-  --syntax-emphasis: #FDE68A;
-  --syntax-strong: #FBBF24;
-  --syntax-strikethrough: #9CA3AF;
-  --syntax-quote: #A1A1AA;
-
   /* Priority tag colors */
   --tag-priority-a: #e76f51;
   --tag-priority-b: #e9c46a;
@@ -310,6 +289,27 @@ html[data-theme="dark"] {
   --code-border-subtle: #555555;
   --editor-table-hover-background-color: rgba(255, 255, 255, 0.1);
   --color-contrast: #000000;
+
+    /* Code syntax highlighting */
+  --syntax-keyword: #f75389;
+  --syntax-string: #34D399;
+  --syntax-string-alt: #6EE7B7;
+  --syntax-number: #FBBF24;
+  --syntax-boolean: #FB7185;
+  --syntax-variable: #60A5FA;
+  --syntax-type: var(--color-warning);
+  --syntax-comment: #6B7280;
+  --syntax-link: #6CB6FF;
+  --syntax-wiki-link: #A78BFA;
+  --syntax-wiki-link-bg: rgba(167, 139, 250, 0.1);
+  --syntax-punctuation: #D1D5DB;
+  --syntax-operator: rgba(var(--accent-primary));
+  --syntax-literal: #10B981;
+  --syntax-invalid: var(--color-error);
+  --syntax-emphasis: #FDE68A;
+  --syntax-strong: #FBBF24;
+  --syntax-strikethrough: #9CA3AF;
+  --syntax-quote: #A1A1AA;
 }
 
 html[data-theme="light"] {
@@ -331,6 +331,27 @@ html[data-theme="light"] {
   /* --editor-table-even-background-color: 240, 235, 221; Keep default */
   --editor-table-hover-background-color: #66635920;
   --color-contrast: rgb(232, 227, 212);
+
+  /* Code syntax highlighting */
+  --syntax-keyword: #C73E1D;
+  --syntax-string: #047857;
+  --syntax-string-alt: #065F46;
+  --syntax-number: #B45309;
+  --syntax-boolean: #BE185D;
+  --syntax-variable: #1E40AF;
+  --syntax-type: #92400E;
+  --syntax-comment: #6B7280;
+  --syntax-link: #1D4ED8;
+  --syntax-wiki-link: #7C3AED;
+  --syntax-wiki-link-bg: rgba(124, 58, 237, 0.1);
+  --syntax-punctuation: #374151;
+  --syntax-operator: #7C2D12;
+  --syntax-literal: #047857;
+  --syntax-invalid: #DC2626;
+  --syntax-emphasis: #92400E;
+  --syntax-strong: #374151;
+  --syntax-strikethrough: #6B7280;
+  --syntax-quote: #6B7280;
 }
 ```
 ## Global Styles
