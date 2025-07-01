@@ -1723,6 +1723,10 @@ kbd {
   box-shadow: var(--shadow-lg);
 }
 
+.sb-modal-box .sb-option .sb-icon svg {
+  color: var(--selection-text) !important;
+}
+
 /* Selected option */
 .sb-selected-option {
   background: var(--selection-bg) !important;
