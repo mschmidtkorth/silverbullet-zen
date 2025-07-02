@@ -298,7 +298,7 @@ html[data-theme="dark"] {
   --surface-hover: #26262C;
   --border-default: #32343B;
   --text-primary: #E8E8E8;
-  --text-secondary: #8F8F9D;
+  --text-secondary: #D1CFC0;
   --text-tertiary: #6E6E7A;
   --selection-bg: var(--surface-base);
   --selection-text: #D1CFC0;
