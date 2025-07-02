@@ -31,6 +31,23 @@ property: value
 
 
 # Theme Foundation
+
+## Your Custom Colors
+
+Pick any color of your choice. Either uncomment one of the below, or add your own by specifying the Red-Green-Blue values from https://rgbcolorpicker.com.
+
+```space-style
+/* priority: 1001 */
+html[data-theme="dark"] {
+  /* Yellow */
+  /* --accent-primary: 243, 210, 104 !important; */
+  /* Cyan */
+  /* --accent-primary: 38, 181, 206 !important; */
+  /* Green */
+  /* --accent-primary: 173, 214, 147 !important; */
+}
+```
+
 ## CSS Variables & Design System
 ```space-style
 /* priority: 1000 */
@@ -1725,6 +1742,10 @@ kbd {
 
 .sb-modal-box .sb-option .sb-icon svg {
   color: var(--selection-text) !important;
+}
+
+.sb-category-header {
+  color: var(--selection-text);
 }
 
 /* Selected option */
